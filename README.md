@@ -5,9 +5,9 @@ Feathers
 ## Getting Started
 
 1. Install nodejs and npm
-2. run `npm install`
-3. run `npm run watch`
-4. open your [http://localhost:8080](http://localhost:8080/) in your browser
+2. Run `npm install`
+3. Run `npm run watch`
+4. Go to [http://localhost:8080](http://localhost:8080/) in your browser
 
 Now you can start editing content. Your content will automatically be rebuilt when things change and since we are using livereload your browser will automatically update with your changes.
 
