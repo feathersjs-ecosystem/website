@@ -8,6 +8,7 @@ var swigify = require('../util/swigify');
 var sanitize = require('../util/sanitize');
 var errorHandler = require('../util/error-handler');
 var config = require('../config').pages;
+var connect = require('gulp-connect');
 
 gulp.task('pages', function() {
   return gulp.src(config.src)
@@ -16,5 +17,6 @@ gulp.task('pages', function() {
     .pipe(gulpif(/\.md$/, markdown(config.markdown)))
     .pipe(data(sanitize(config.meta)))
     .pipe(swigify(config.swig).on('error', errorHandler))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dest))
+    .pipe(connect.reload());
 });

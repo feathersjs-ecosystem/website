@@ -6,14 +6,14 @@ Feathers
 
 1. Install nodejs and npm
 2. run `npm install`
-3. run `npm run watch` 
-4. open your `build/index.html` file in your browser
+3. run `npm run watch`
+4. open your [http://localhost:8080](http://localhost:8080/) in your browser
 
-Now you can start editing content. Your content will automatically be rebuilt when things change and you can just reload your browser at any time.
+Now you can start editing content. Your content will automatically be rebuilt when things change and since we are using livereload your browser will automatically update with your changes.
 
 ## Building
 
-Simply run `npm run build` to build the site.
+Simply run `npm run build` to build the site, which runs through the appropriate gulp tasks.
 
 ## Deploying
 The site currently gets deployed to [Netlify](https://www.netlify.com). In order to do this simplly commit to the master branch and it will kick off a build and Netlify will run the `npm run build` command. This will clean out any old files, rebuild the site with the production config, and deploy it.

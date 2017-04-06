@@ -3,6 +3,7 @@ var util = require('gulp-util');
 var webpack = require('webpack');
 var webpackStream = require('webpack-stream');
 var config = require('../config').webpack;
+var connect = require('gulp-connect');
 var production = !!util.env.production || process.env.NODE_ENV === 'production';
 
 if (production) {
@@ -19,5 +20,6 @@ gulp.task('webpack', function () {
       gutil.log('[webpack]', stats.toString({colors: true}));
       callback();
     })
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dest))
+    .pipe(connect.reload());
 });

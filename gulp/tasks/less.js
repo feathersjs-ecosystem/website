@@ -5,6 +5,7 @@ var less = require('gulp-less');
 var cssmin = require('gulp-minify-css');
 var errorHandler = require('../util/error-handler');
 var config = require('../config').less;
+var connect = require('gulp-connect');
 
 var production = !!util.env.production || process.env.NODE_ENV === 'production';
 
@@ -14,5 +15,6 @@ gulp.task('less', function () {
       paths: [ path.join(__dirname, config.src) ]
     }).on('error', errorHandler))
     .pipe(production ? cssmin() : util.noop())
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dest))
+    .pipe(connect.reload());
 });
