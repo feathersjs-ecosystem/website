@@ -16,7 +16,7 @@ Now you can start editing content. Your content will automatically be rebuilt wh
 Simply run `npm run build` to build the site.
 
 ## Deploying
-The site currently gets deployed to Github Pages. In order to do this simple run `npm run deploy`. This will clean out any old files, rebuild the site with the production config, and push it to the `gh-pages` branch.
+The site currently gets deployed to [Netlify](). In order to do this simplly commit to the master branch and it will kick off a build and Netlify will run the `npm run deploy` command. This will clean out any old files, rebuild the site with the production config, and push it to the `gh-pages` branch.
 
 ## Structure
 
@@ -41,4 +41,4 @@ This directory holds the config values for production and development environmen
 
 ### `build/`
 
-These are all the files that get deployed to the `gh-pages` branch.
+These are all the files that get deployed to Netlify.
