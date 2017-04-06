@@ -1,0 +1,46 @@
+{
+  "site": {
+    "baseUrl": "http://localhost:8080",
+    "title": "Feathers - A minimalist real-time framework for tomorrow's apps.",
+    "description": "An open source REST and realtime API layer for modern applications.",
+    "keywords": "feathers, server, websocket, application, client, API, Firebase, Parse, Horizon, real-time, backend, Stripe, socket.io, javascript, sql, nosql, sql server, mysql, postgres, postgresql, mongo, mongodb, sqlite, sqllite, redis, nedb, mongoose, sequelize",
+    "author": {
+      "name": "Eric Kryski",
+      "twitter": "ekryski"
+    },
+    "ga": {
+      "id": "UA-64904930-2"
+    },
+    "googleplus": {
+      "name": "Feathers",
+      "about": "A minimalist real-time framework for tomorrow's apps.",
+      "description": "Wow your users. Build incredible real-time applications in record time.",
+      "image": "/img/google-plus-share-image.png",
+      "applicationCategory": "Server",
+      "downloadUrl": "http://feathersjs.com",
+      "featureList": "real-time, stripe, websocket, mongodb, mysql, postgres, sqlite",
+      "operatingSystem": "Windows 7, Windows 8, OSX 10.6+, Linux",
+      "author": "Eric Kryski"
+    },
+    "twittercard": {
+      "card": "summary_large_image",
+      "site": "@feathersjs",
+      "title": "Feathers - A minimalist real-time framework for tomorrow's apps.",
+      "description": "Wow your users. Build incredible real-time applications in record time with Feathers.",
+      "creator": "@ekryski",
+      "image": "/img/twitter-card-image.png"
+    },
+    "facebookgraph": {
+      "title": "Feathers - A minimalist real-time framework for tomorrow's apps.",
+      "type": "product",
+      "image": "/img/facebook-share-image.png",
+      "description": "Wow your users. Build incredible real-time applications in record time.",
+      "siteName": "Feathers",
+      "updatedTime": "2016-03-02T11:08:47+01:00",
+      "richAttachment": "true",
+      "brand": "Feathers",
+      "category": "Software",
+      "admins": "517607527"
+    }
+  }
+}

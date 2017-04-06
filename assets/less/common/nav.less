@@ -1,0 +1,50 @@
+nav {
+  // position: fixed;
+  background: none;
+  width: 100%;
+  z-index: 10;
+  height: 75px;
+
+  &.transparent {
+    background: none;
+  }
+  
+  .navbar {
+    padding: 20px 0;
+  }
+
+  li {
+    margin: 0 7px;
+  }
+
+  a {
+    padding: 6px 12px;
+    color: @grey;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    visibility: hidden;
+
+    &:hover {
+      color: @text-color;
+      // background: fade(@black, 3%);
+      .rounded(5px);
+    }
+
+    &.primary {
+      color: @green;
+
+      &:hover {
+        color: darken(@green, 10%);
+      }
+    }
+  }
+
+  iframe {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    display: none;
+  }
+}
