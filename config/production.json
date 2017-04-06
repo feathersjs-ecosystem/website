@@ -1,7 +1,7 @@
 {
   "site": {
     "baseUrl": "https://feathersjs.com",
-    "title": "Feathers - A minimalist real-time framework for tomorrow's apps.",
+    "title": "Feathers - An open source REST and realtime API layer for modern applications.",
     "description": "An open source REST and realtime API layer for modern applications.",
     "keywords": "feathers, server, websocket, application, client, real-time, Stripe, socket.io, javascript, sql, nosql, sql server, mysql, postgres, postgresql, mongo, mongodb, sqlite, sqllite, redis, nedb, mongoose, sequelize",
     "author": {
@@ -13,7 +13,7 @@
     },
     "googleplus": {
       "name": "Feathers",
-      "about": "A minimalist real-time framework for tomorrow's apps.",
+      "about": "An open source REST and realtime API layer for modern applications.",
       "description": "Wow your users. Build incredible real-time applications in record time.",
       "image": "/img/google-plus-share-image.png",
       "applicationCategory": "Server",
@@ -25,13 +25,13 @@
     "twittercard": {
       "card": "summary_large_image",
       "site": "@feathersjs",
-      "title": "Feathers - A minimalist real-time framework for tomorrow's apps.",
+      "title": "Feathers - An open source REST and realtime API layer for modern applications.",
       "description": "Wow your users. Build incredible real-time applications in record time with Feathers.",
       "creator": "@ekryski",
       "image": "/img/twitter-card-image.png"
     },
     "facebookgraph": {
-      "title": "Feathers - A minimalist real-time framework for tomorrow's apps.",
+      "title": "Feathers - An open source REST and realtime API layer for modern applications.",
       "type": "product",
       "image": "/img/facebook-share-image.png",
       "description": "Wow your users. Build incredible real-time applications in record time.",
