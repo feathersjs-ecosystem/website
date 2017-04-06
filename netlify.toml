@@ -1,0 +1,25 @@
+# Global settings applied to the whole site.
+[build]
+  publish = "build"
+  command = "npm run build"
+
+# Production context: All deploys to the main
+# repository branch will inherit these settings.
+[context.production]
+  [context.production.environment]
+    NODE_ENV = "production"
+
+# Deploy Preview context: All Deploy Previews
+# will inherit these settings.
+# [context.deploy-preview]
+
+# Branch Deploy context: All deploys that are not in
+# an active Deploy Preview will inherit these settings.
+#[context.branch-deploy]
+
+# Specific branch context: Deploys from this branch
+# will take these settings and override their
+# current ones.
+#[context.feature]
+
+#[context."features/branch"]
