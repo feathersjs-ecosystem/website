@@ -32,9 +32,8 @@
   "scripts": {
     "clean": "rm -rf build/",
     "watch": "gulp watch",
-    "build": "npm run clean; gulp build",
+    "build": "npm run clean; gulp build; gulp sitemap",
     "postinstall": "npm run build",
-    "deploy": "npm run clean; NODE_ENV=production npm run build; gulp sitemap",
     "test": "gulp"
   },
   "dependencies": {
