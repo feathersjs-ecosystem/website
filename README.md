@@ -2,6 +2,10 @@ Feathers
 ==================
 > The marketing site for FeathersJS
 
+<a href="https://www.netlify.com" target="_blank">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" />
+</a>
+
 ## Getting Started
 
 1. Install nodejs and npm
