@@ -2,8 +2,8 @@
   "site": {
     "baseUrl": "http://localhost:8080",
     "title": "Feathers - An open source REST and realtime API layer for modern applications.",
-    "description": "An open source REST and realtime API layer for modern applications.",
-    "keywords": "feathers, server, websocket, application, client, API, Firebase, Parse, Horizon, real-time, backend, Stripe, socket.io, javascript, sql, nosql, sql server, mysql, postgres, postgresql, mongo, mongodb, sqlite, sqllite, redis, nedb, mongoose, sequelize",
+    "description": "Create REST APIs and realtime apps in no time with the Feathers open source web framework.",
+    "keywords": "feathers, web, framework, sails, loopback, server, websocket, application, client, API, Firebase, Parse, Horizon, real-time, backend, Stripe, socket.io, javascript, sql, nosql, sql server, mysql, postgres, postgresql, mongo, mongodb, sqlite, sqllite, redis, nedb, mongoose, sequelize",
     "author": {
       "name": "Eric Kryski",
       "twitter": "ekryski"
