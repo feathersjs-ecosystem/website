@@ -254,7 +254,7 @@ var App = function() {
 
         if (sponsors.length > 0) {
           console.log(sponsors)
-          sponsorLogos += '<p id="sponsorTier">' + tier + ':<p>'
+          sponsorLogos += '<p id="sponsorTier">' + tier + '<p>'
         }
 
         sponsors.forEach(sponsor => {
