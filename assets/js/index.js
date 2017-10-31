@@ -248,9 +248,14 @@ var App = function() {
       var silverSponsors = data.filter(s => s.tier === 'silver-sponsorship')
       var bronzeSponsors = data.filter(s => s.tier === 'bronze-sponsorship')
 
-      function makeSponsorLinks (sponsors) {
+      function makeSponsorLinks (sponsors, tier) {
         var sponsorLogos = ''
         var sponsorLink = ''
+
+        if (sponsors.length > 0) {
+          console.log(sponsors)
+          sponsorLogos += '<p id="sponsorTier">' + tier + ':<p>'
+        }
 
         sponsors.forEach(sponsor => {
           sponsorLink = '<a href= "http://' + sponsor.website + '">'
@@ -263,10 +268,10 @@ var App = function() {
 
         return sponsorLogos
       }
-      $('#platinumSponsors').append(makeSponsorLinks(platinumSponsors))
-      $('#goldSponsors').append(makeSponsorLinks(goldSponsors))
-      $('#silverSponsors').append(makeSponsorLinks(silverSponsors))
-      $('#bronzeSponsors').append(makeSponsorLinks(bronzeSponsors))
+      $('#platinumSponsors').append(makeSponsorLinks(platinumSponsors, 'Platinum'))
+      $('#goldSponsors').append(makeSponsorLinks(goldSponsors, 'Gold'))
+      $('#silverSponsors').append(makeSponsorLinks(silverSponsors, 'Silver'))
+      $('#bronzeSponsors').append(makeSponsorLinks(bronzeSponsors, 'Bronze'))
     });
 
   });
