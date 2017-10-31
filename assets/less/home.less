@@ -22,7 +22,7 @@
 
 main.home {
   padding-top: 0;
-  
+
   section.hero {
     background: @background-color;
     padding-bottom: 40px;
@@ -94,7 +94,7 @@ main.home {
         overflow-y: auto;
         white-space: nowrap;
       }
-      
+
       p {
         color: @white;
         line-height: 1.2em;
@@ -135,7 +135,7 @@ main.home {
       code.install-instructions {
         overflow-y: auto;
         white-space: nowrap;
-        
+
         p {
           line-height: 1.8em;
           margin: 0;
@@ -216,5 +216,47 @@ main.home {
 
   section.callout {
     background: @lightest-grey;
+  }
+
+  section.sponsors {
+    font-family: sans-serif;
+    padding: 50px 0;
+
+    .donate-button {
+      padding-top: 16px;
+    }
+
+    #sponsorTier {
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 20px;
+    }
+    #sponsorLogos img {
+      vertical-align: middle;
+      margin: 24px;
+    }
+
+    #platinumSponsors img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+    #goldSponsors img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+    #silverSponsors img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    #bronzeSponsors img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+
+    h2{
+      text-align: center;
+      font-weight: bold;
+    }
   }
 }

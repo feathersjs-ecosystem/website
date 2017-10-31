@@ -12,7 +12,7 @@ var App = function() {
 
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
-        url = url.toLowerCase(); // This is just to avoid case sensitiveness  
+        url = url.toLowerCase(); // This is just to avoid case sensitiveness
         name = name.replace(/[\[\]]/g, "\\$&").toLowerCase();// This is just to avoid case sensitiveness for query parameter name
         var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
             results = regex.exec(url);
@@ -152,7 +152,7 @@ var App = function() {
         }
       }
     });
-    
+
     $mainCTA.on('touchstart mousedown', function(ev){
       ev.preventDefault();
       ga('send', 'event', 'button', 'click', 'top_get_started_button');
@@ -191,7 +191,7 @@ var App = function() {
       ev.preventDefault();
 
       var $el = $(ev.currentTarget);
-      
+
       // If we clicked the same button just ignore it.
       if ($el.parent('li').hasClass('active')) {
         return;
@@ -217,6 +217,7 @@ var App = function() {
     deviceAnimationInterval = setInterval(animateDevices, 5000);
 
 
+
     // var twttr = window.twttr;
 
     // twttr.ready(function (twttr) {
@@ -238,6 +239,41 @@ var App = function() {
     //     ga('send', 'event', 'button', 'click', 'twitter follow button');
     //   });
     // });
+
+    // var sponsorLogos = []
+
+    var sponsors = $.getJSON('https://opencollective.com/feathers/sponsors.json', function (data) {
+      var platinumSponsors = data.filter(s => s.tier === 'platinum-sponsorship')
+      var goldSponsors = data.filter(s => s.tier === 'gold-sponsorship')
+      var silverSponsors = data.filter(s => s.tier === 'silver-sponsorship')
+      var bronzeSponsors = data.filter(s => s.tier === 'bronze-sponsorship')
+
+      function makeSponsorLinks (sponsors, tier) {
+        var sponsorLogos = ''
+        var sponsorLink = ''
+
+        if (sponsors.length > 0) {
+          console.log(sponsors)
+          sponsorLogos += '<p id="sponsorTier">' + tier + '<p>'
+        }
+
+        sponsors.forEach(sponsor => {
+          sponsorLink = '<a href= "http://' + sponsor.website + '">'
+          sponsorLogos += sponsorLink +
+          '<img src= "' + sponsor.avatar + '" '
+          + 'alt= "' + sponsor.name + '" '
+          + 'class="logo"'
+          + 'title="' + sponsor.name + '" ></a>'
+        })
+
+        return sponsorLogos
+      }
+      $('#platinumSponsors').append(makeSponsorLinks(platinumSponsors, 'Platinum'))
+      $('#goldSponsors').append(makeSponsorLinks(goldSponsors, 'Gold'))
+      $('#silverSponsors').append(makeSponsorLinks(silverSponsors, 'Silver'))
+      $('#bronzeSponsors').append(makeSponsorLinks(bronzeSponsors, 'Bronze'))
+    });
+
   });
 };
 
