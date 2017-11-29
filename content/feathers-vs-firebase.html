@@ -1,0 +1,37 @@
+---
+title: Feathers vs Firebase
+layout: page
+---
+
+<main>
+  <section class="comparison">
+    <div class="container">
+      <div class="row clear">
+        <div class="col col-12 col-8-tablet center-element">
+          <h2>Feathers vs Firebase</h2>
+          <p>Firebase is a hosted platform for mobile or web applications. Just like Feathers, Firebase provides REST and real-time
+            APIs but also includes CDN support. Feathers on the other hand leaves setting up a CDN and hosting your Feathers
+            app up to the developer.</p>
+          <p>Firebase is a closed-source, paid hosted service starting at $5/month with the next plan level starting at $49/month.
+            Feathers is open source and can run on any hosting platform like Heroku, Modulus or on your own servers like
+            Amazon AWS, Microsoft Azure, Digital Ocean and your local machine. Because Firebase can't be run locally you
+            typically need to pay for both a shared development environment on top of any production and testing environment.</p>
+          <p>Firebase has JavaScript and mobile clients and also provides framework specific bindings. Feathers currently focuses
+            on universal usage in JavaScript environments and does not have any framework specific bindings. Mobile applications
+            can use Feathers REST and websocket endpoints directly but at the moment there are no Feathers specific iOS and
+            Android SDKs.
+          </p>
+          <p>Firebase currently supports offline mode whereas that is currently left up to the developer with Feathers. We do
+            however have <a class="primary" href="https://github.com/feathersjs/feathers-client/issues/29" target="_blank"
+              title="Offline proposal">a proposal for this feature.</a></p>
+          <p>Both Firebase and Feathers support email/password, token, and OAuth authentication. Firebase has not publicly disclosed
+            the database technology they use to store your data behind their API but it seems to be an SQL variant. Feathers
+            supports multiple databases, NoSQL and SQL alike.</p>
+          <p>For more technical details on the difference and how to potentially migrate an application you can read <a class="primary"
+              href="https://medium.com/all-about-feathersjs/using-feathersjs-as-an-open-source-alternative-to-firebase-b5d93c200cee#.olu25brld"
+              target="blank" title="Feathers - An open source alternative to firebase">how to use Feathers as an open source alternative to Firebase</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
