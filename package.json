@@ -56,7 +56,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-sitemap": "^2.2.0",
     "highlight.js": "^8.8.0",
-    "require-dir": "^0.1.0",
+    "require-dir": "^0.3.0",
     "swig": "^1.4.2",
     "through2": "^2.0.0",
     "webpack": "^1.10.5",
