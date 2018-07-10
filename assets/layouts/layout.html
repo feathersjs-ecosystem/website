@@ -76,6 +76,9 @@
   {% block navbar %}
     <nav>
       <div class="navbar container relative">
+        <div class="right">
+          <a class="github-button" href="https://github.com/feathersjs/feathers" data-icon="octicon-star" data-show-count="true" aria-label="Star feathersjs/feathers on GitHub">Star</a>
+        </div>
         <ul class="list-inline text-center">
           <li>
             <a class="" href="https://github.com/feathersjs/feathers" target="_blank" title="Github">Github</a>
@@ -90,8 +93,6 @@
             <a class="" href="http://docs.feathersjs.com/help/readme.html" target="_blank" title="Support">Support</a>
           </li>
         </ul>
-
-        <a class="github-button absolute none block-tablet" href="https://github.com/feathersjs/feathers" data-style="mega" data-count-href="/feathersjs/feathers/stargazers" data-count-api="/repos/feathersjs/feathers#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star feathersjs/feathers on GitHub">Star</a>
       </div>
     </nav>
   {% endblock %}
@@ -186,7 +187,7 @@
     ga('create', '{{site.ga.id}}', 'auto');
     ga('send', 'pageview');
   </script>
-  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script type="text/javascript" src="feathers.js"></script>
   {% endblock %}
 </body>
