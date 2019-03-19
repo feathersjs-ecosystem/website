@@ -216,6 +216,17 @@ var App = function() {
     // TODO (EK): cancel timeout when not in view
     deviceAnimationInterval = setInterval(animateDevices, 5000);
   });
+
+  $.getJSON('.netlify/functions/sponsors').then(function(data) {
+    data.forEach(function(sponsor) {
+      $('#sponsor-list').append(
+        '<a href="' + sponsor.website + '" target="_blank">' +
+          '<img src="' + sponsor.image +
+          '" alt="Donated $' + sponsor.totalAmountDonated + ' total">' +
+        '</a>'
+      );
+    });
+  });
 };
 
 module.exports = App();
