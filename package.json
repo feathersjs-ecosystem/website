@@ -37,7 +37,7 @@
     "postinstall": "npm run build",
     "test": "gulp"
   },
-  "devDependencies": {
+  "dependencies": {
     "del": "^1.2.0",
     "expose-loader": "^0.6.0",
     "gulp": "^3.9.0",
