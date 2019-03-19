@@ -6,3 +6,4 @@ lib/
 .publish
 !.gitignore
 !.npmignore
+functions/dist
