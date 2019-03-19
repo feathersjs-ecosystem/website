@@ -217,7 +217,7 @@ var App = function() {
     deviceAnimationInterval = setInterval(animateDevices, 5000);
   });
 
-  $.getJSON('http://localhost:9000/sponsors').then(function(data) {
+  $.getJSON('/sponsors').then(function(data) {
     data.forEach(function(sponsor) {
       $('#sponsor-list').append(
         '<a href="' + sponsor.website + '" target="_blank">' +
