@@ -14,7 +14,7 @@ main {
 }
 
 section {
-  padding: 100px 0;
+  padding: @main-spacing 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -129,4 +129,27 @@ i.left-padding {
 
 .lt-ie9 .typewriter span.whitespace {
   min-width: 0.35em;
+}
+
+.arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -@main-spacing;
+  margin-bottom: @main-spacing;
+  
+  &.arrow-white {
+    border-top: 40px solid @white;
+  }
+
+  &.arrow-light-grey {
+    border-top: 40px solid @lightest-grey;
+  }
+
+  &.arrow-primary {
+    border-top: 40px solid @primary-action-color;
+  }
 }
