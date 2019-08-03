@@ -22,6 +22,10 @@
 
 main.home {
   padding-top: 0;
+
+  .key-image img {
+    width: 80%;
+  }
   
   section.hero {
     background: @background-color;
@@ -73,24 +77,27 @@ main.home {
   }
 
   section.sponsors {
-    padding-top: 0;
+    padding: 60px 0;
+    background-color: @primary-action-color;
 
     h2 {
       margin-top: 0;
       margin-bottom: 50px;
-      color: #666;
+      color: @white;
+      text-transform: uppercase;
     }
 
     img {
-      height: 100px;
+      height: 4em;
+      margin: 1em 2em;
     }
   }
 
   section.quick-start {
-    background: @lightest-grey;
+    background-color: @lightest-grey;
 
     h2 {
-      color: @green;
+      color: @secondary-action-color;
     }
 
     h4 {
@@ -218,11 +225,11 @@ main.home {
     }
   }
 
+  section.product {
+    background-color: @lightest-grey;
+  }
+  
   section.features {
-    .feature {
-      visibility: hidden;
-    }
-
     p {
       line-height: 1.5em;
     }
