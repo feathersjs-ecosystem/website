@@ -1,42 +1,31 @@
 {
   "site": {
     "baseUrl": "http://localhost:8080",
-    "title": "Feathers - An open source REST and realtime API layer for modern applications.",
-    "description": "Create REST APIs and realtime apps in no time with the Feathers open source web framework.",
-    "keywords": "feathers, web, framework, sails, loopback, server, websocket, application, client, API, Firebase, Parse, Horizon, real-time, backend, Stripe, socket.io, javascript, sql, nosql, sql server, mysql, postgres, postgresql, mongo, mongodb, sqlite, sqllite, redis, nedb, mongoose, sequelize",
+    "title": "Feathers - A framework for real-time applications and REST APIs",
+    "description": "Feathers is a web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript with Node.JS, React Native and the browser.",
+    "keywords": "feathers, web, framework, nestjs, sails, loopback, server, websocket, application, client, API, Firebase, Parse, Horizon, real-time, backend, socket.io, typescript, javascript, sql, nosql, sql server, mysql, postgres, postgresql, mongo, mongodb, sqlite, sqllite, redis, nedb, mongoose, sequelize",
     "author": {
-      "name": "Eric Kryski",
-      "twitter": "ekryski"
+      "name": "Feathers contributors",
+      "twitter": "feathersjs"
     },
     "ga": {
       "id": "UA-64904930-2"
     },
-    "googleplus": {
-      "name": "Feathers",
-      "about": "An open source REST and realtime API layer for modern applications.",
-      "description": "Wow your users. Build incredible real-time applications in record time.",
-      "image": "/img/google-plus-share-image.png",
-      "applicationCategory": "Server",
-      "downloadUrl": "http://feathersjs.com",
-      "featureList": "real-time, stripe, websocket, mongodb, mysql, postgres, sqlite",
-      "operatingSystem": "Windows 7, Windows 8, OSX 10.6+, Linux",
-      "author": "Eric Kryski"
-    },
     "twittercard": {
       "card": "summary_large_image",
       "site": "@feathersjs",
-      "title": "Feathers - An open source REST and realtime API layer for modern applications.",
-      "description": "Wow your users. Build incredible real-time applications in record time with Feathers.",
-      "creator": "@ekryski",
+      "title": "Feathers - A framework for real-time applications and REST APIs",
+      "description": "Feathers is a web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript with Node.JS, React Native and the browser.",
+      "creator": "@daffl",
       "image": "/img/twitter-card-image.png"
     },
     "facebookgraph": {
-      "title": "Feathers - An open source REST and realtime API layer for modern applications.",
+      "title": "Feathers - A framework for real-time applications and REST APIs",
       "type": "product",
       "image": "/img/facebook-share-image.png",
-      "description": "Wow your users. Build incredible real-time applications in record time.",
+      "description": "Feathers is a web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript with Node.JS, React Native and the browser",
       "siteName": "Feathers",
-      "updatedTime": "2016-03-02T11:08:47+01:00",
+      "updatedTime": "2019-08-02T11:08:47+01:00",
       "richAttachment": "true",
       "brand": "Feathers",
       "category": "Software",
