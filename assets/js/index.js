@@ -76,11 +76,6 @@ var App = function() {
     $('.github-button').on('touchstart mousedown', function(ev) {
       ga('send', 'event', 'link', 'click', 'github_button');
     });
-
-    // Kick off the device animation loop
-    animateDevices();
-    // TODO (EK): cancel timeout when not in view
-    deviceAnimationInterval = setInterval(animateDevices, 5000);
   });
 };
 
