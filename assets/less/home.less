@@ -22,6 +22,10 @@
 
 main.home {
   padding-top: 0;
+
+  .key-image img {
+    width: 80%;
+  }
   
   section.hero {
     background: @background-color;
@@ -70,27 +74,33 @@ main.home {
       font-size: 1.4em;
       line-height: 1.3em;
     }
+
+    h2 {
+      margin: 0;
+    }
   }
 
   section.sponsors {
-    padding-top: 0;
+    background-color: @primary-action-color;
 
     h2 {
       margin-top: 0;
       margin-bottom: 50px;
-      color: #666;
+      color: @white;
+      text-transform: uppercase;
     }
 
     img {
-      height: 100px;
+      height: 4em;
+      margin: 1em 2em;
     }
   }
 
   section.quick-start {
-    background: @lightest-grey;
+    background-color: @lightest-grey;
 
     h2 {
-      color: @green;
+      color: @secondary-action-color;
     }
 
     h4 {
@@ -218,17 +228,31 @@ main.home {
     }
   }
 
-  section.features {
-    .feature {
-      visibility: hidden;
-    }
+  section.product {
+    background-color: @lightest-grey;
 
+    h2 {
+      color: @secondary-action-color;
+    }
+  }
+
+  section.features {
     p {
       line-height: 1.5em;
+    }
+
+    h4 {
+      color: @secondary-action-color;
+      padding-bottom: 0.5em;
     }
   }
 
   section.callout {
     background: @lightest-grey;
+
+    h2 {
+      margin-bottom: 2em;
+      margin-top: 0;
+    }
   }
 }

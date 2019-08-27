@@ -1,11 +1,11 @@
 footer {
-  background: #3E4140;
+  background: @blue;
   padding-top: 60px;
+  color: @white;
 
   p.title {
-    color: #6CB090;
-    font-weight: 400;
     text-transform: uppercase;
+    color: darken(@blue, 30%);
   }
 
   img.logo {
@@ -23,10 +23,11 @@ footer {
   }
 
   a {
-    color: #969C9A;
+    color: @white;
+    line-height: 2em;
 
     &:hover {
-      color: lighten(#969C9A, 10%);
+      color: darken(@white, 20%);
     }
   }
 
@@ -45,8 +46,13 @@ footer {
     }
   }
 
-  span.copyright {
-    color: #969C9A;
-    margin-right: 10px;
+  .copyright {
+    margin-top: 30px;
+    color: fade(white, 70%);
+    border-top: 1px fade(white, 50%) solid;
+
+    a {
+      color: fade(white, 70%);
+    }
   }
 }
