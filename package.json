@@ -55,7 +55,7 @@
     "gulp-minify-css": "^1.2.0",
     "gulp-notify": "^2.2.0",
     "gulp-sitemap": "^2.2.0",
-    "highlight.js": "^8.8.0",
+    "highlight.js": "^10.1.2",
     "require-dir": "^0.3.0",
     "swig": "^1.4.2",
     "through2": "^2.0.0",
