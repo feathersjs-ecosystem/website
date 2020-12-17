@@ -108,11 +108,32 @@ main.home {
     }
 
     .terminal-wrapper {
-      font-family: 'Courier', 'Monaco', 'Arial', sans-serif;
+      font-family: 'Roboto Mono', 'Courier', 'Monaco', 'Arial', sans-serif;
+      font-weight: 500;
       padding: 20px;
-      background: @medium-grey;
-      .rounded(5px);
-      .drop-shadow(0, 2px, 3px, 0.3);
+      background: @charcoal-black;
+      .rounded(6px);
+      .drop-shadow(0, 1px, 2px, 0.1);
+
+      .terminal-buttons {
+        padding-bottom: 20px;
+        span {
+          height: 14px;
+          width: 14px;
+          display: inline-block;
+          .rounded(10px);
+        }
+        .terminal-red-button {
+          background: @dark-red;
+        }
+        .terminal-yellow-button {
+          background: @dark-yellow;
+        }
+        .terminal-green-button {
+          background: @light-green;
+        }
+        
+      }
 
       .terminal {
         overflow-y: auto;
