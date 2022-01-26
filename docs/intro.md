@@ -11,12 +11,12 @@ Welcome to the FeathersJS documentation! Feathers is a lightweight web-framework
 
 At its core, Feathers is a set of tools and an architecture pattern that make it easy to create scalable REST APIs and real-time applications. You can build prototypes in minutes and production-ready apps in days. To get started, follow one of the following links:
 
-[The Feathers guide >](./guides/readme.md)
+<!-- [The Feathers guide >](./guides/readme.md) -->
 
-[The API documentation >](./api/readme.md)
+<!-- [The API documentation >](./api/readme.md) -->
 
-[The cookbook for common tasks and patterns >](./cookbook/readme.md)
+<!-- [The cookbook for common tasks and patterns >](./cookbook/readme.md) -->
 
-[FAQ and ways to get help >](./help/readme.md)
+<!-- [FAQ and ways to get help >](./help/readme.md) -->
 
-[Migrate to the latest version >](./guides/migrating.md)
+<!-- [Migrate to the latest version >](./guides/migrating.md) -->

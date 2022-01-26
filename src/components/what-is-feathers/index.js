@@ -21,7 +21,7 @@ const FeatureList = [
         <p>Build prototypes in minutes and production-ready apps in days.</p>
         <p>Seriously.</p>
         <p>
-          <Link className="button button--primary" to="/docs/guides">Learn more →</Link>
+          <Link className="button button--primary" to="/docs/intro">Learn more →</Link>
         </p>
       </>
     )
