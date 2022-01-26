@@ -1,0 +1,49 @@
+.illustration {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 62vw;
+  justify-content: center;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration::before {
+  background: #27464F;
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  height: 30%;
+  position: absolute;
+  width: 150%;
+  z-index: -1;
+}
+
+.illustration img {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.illustration > * {
+  position: relative;
+}
+
+.illustration h1 {
+  margin-bottom: 2.5em;
+  text-align: center;
+  margin-top: -8%;
+}
+
+@media (max-width: 996px) {
+  .illustration {
+    height: 70vw;
+  }
+
+  .illustration h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+}

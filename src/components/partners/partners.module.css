@@ -1,0 +1,19 @@
+.partners {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.title, .paragraph {
+  margin: auto;
+  max-width: 60%;
+}
+
+.title {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 996px) {
+  .title, .paragraph {
+    max-width: none;
+  }
+}

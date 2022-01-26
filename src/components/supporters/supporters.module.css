@@ -1,0 +1,10 @@
+.supporters {
+  background-color: var(--background-color-inverted);
+  color: var(--text-color-inverted);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2em;
+}

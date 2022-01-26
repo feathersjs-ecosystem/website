@@ -1,0 +1,46 @@
+.features {
+  padding: 5rem 0;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.svg {
+  height: auto;
+  width: 447px;
+  max-width: 100%;
+}
+
+.reverse svg {
+  height: auto;
+  width: 364px;
+  max-width: 100%;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.row {
+  align-items: center;
+}
+
+.row p {
+  padding: 0 4em;
+}
+
+@media (max-width: 996px) {
+  .alignRight {
+    text-align: center;
+  }
+
+  .alignLeft {
+    text-align: center;
+  }
+
+  .row p {
+    margin-top: 2em;
+    padding: 0 2em;
+  }
+}
