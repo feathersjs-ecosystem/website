@@ -6,15 +6,8 @@ import Head from '@docusaurus/Head';
 import Hero from '../components/hero';
 import WhatIsFeathers from '../components/what-is-feathers';
 import Supporters from '../components/supporters';
-import Partners from '../components/partners';
-
-function HomepageHeader () {
-  return (
-    <>
-      <Hero />
-    </>
-  );
-}
+import Generator from '../components/generator';
+import WhatMakesItSpecial from '../components/what-makes-it-special';
 
 export default function Home () {
   const { siteConfig } = useDocusaurusContext();
@@ -25,11 +18,12 @@ export default function Home () {
       <Layout
         title={`${siteConfig.title} | ${siteConfig.tagline}`}
         description="Feathers is a web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript with Node.JS, React Native and the browser.">
-        <HomepageHeader />
+        <Hero />
         <main>
           <WhatIsFeathers />
           <Supporters />
-          <Partners />
+          <Generator />
+          <WhatMakesItSpecial />
         </main>
       </Layout>
     </>
