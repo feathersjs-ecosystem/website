@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'tailwind-styled-components';
 
-import './what-makes-it-special.css';
+import styles from './what-makes-it-special.module.css';
 
 const Title = tw.h1`
   text-center
@@ -39,22 +39,22 @@ const Icon = tw.img`
 
 const WhatMakesItSpecial = () => {
   return (
-    <section className="relative min-h-[30rem]">
-      <div className="decor" />
+    <section className="relative">
+      <div className={styles.decor} />
       <div className="container py-12">
         <Title>See what makes Feathers special</Title>
         <Grid>
-          <Column>
+          <Column className={styles.column}>
             <Icon src="/img/fast.svg" />
             <Title>Fast</Title>
             <Paragraph>Leveraging a unique architecture, Feathers lets you focus on building your APIs and real-time applications quickly. You automatically get scalable REST, GraphQL and real-time APIs and stay prepared for whatever else the future might bring.</Paragraph>
           </Column>
-          <Column>
+          <Column className={styles.column}>
             <Icon src="/img/universal.svg" />
             <Title>Universal</Title>
             <Paragraph>Feathers can be used with NodeJS, Deno, in the browser, with React Native or with any other API client. You can use any database with many supported out of the box and connect your API seamlessly to any frontend framework.</Paragraph>
           </Column>
-          <Column>
+          <Column className={styles.column}>
             <Icon src="/img/flexible.svg" />
             <Title>Flexible</Title>
             <Paragraph>Built for TypeScript and JavaScript, Feathers provides the structure to create complex applications but is flexible enough to not be in the way. With a large ecosystem of plugins you can include exactly what you need. No more, no less.</Paragraph>

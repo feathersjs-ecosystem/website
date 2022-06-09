@@ -1,0 +1,40 @@
+.decor {
+  background: theme(colors.gray.200);
+  height: 100%;
+  left: 0;
+  min-height: 30rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.decor::after {
+  background-color: white;
+  bottom: 0;
+  clip-path: ellipse(200% 100% at center 150%);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen(lg) {
+  .decor::after {
+    clip-path: ellipse(110% 100% at center 150%);
+  }
+}
+
+html[data-theme='dark'] .decor {
+  background-color: theme(colors.slate.700);
+}
+
+html[data-theme='dark'] .decor::after {
+  background-color: theme(colors.slate.900);
+}
+
+html[data-theme='dark'] .column {
+  background-color: theme(colors.slate.800);
+}

@@ -1,0 +1,3 @@
+html[data-theme='dark'] .section {
+  background-color: theme(colors.slate.900);
+}

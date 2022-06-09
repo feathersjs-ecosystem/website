@@ -1,7 +1,11 @@
 .generator {
-  background-color: #e0e0e0;
+  background-color: theme(colors.gray.200);
   padding: 8rem 0;
   text-align: center;
+}
+
+html[data-theme='dark'] .generator {
+  background-color: theme(colors.slate.700);
 }
 
 .illustrationContainer {

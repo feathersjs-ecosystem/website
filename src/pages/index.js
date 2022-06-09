@@ -8,6 +8,7 @@ import WhatIsFeathers from '../components/what-is-feathers';
 import Supporters from '../components/supporters';
 import Generator from '../components/generator';
 import WhatMakesItSpecial from '../components/what-makes-it-special';
+import CreateFirstApp from '../components/create-first-app';
 
 export default function Home () {
   const { siteConfig } = useDocusaurusContext();
@@ -24,6 +25,7 @@ export default function Home () {
           <Supporters />
           <Generator />
           <WhatMakesItSpecial />
+          <CreateFirstApp />
         </main>
       </Layout>
     </>
